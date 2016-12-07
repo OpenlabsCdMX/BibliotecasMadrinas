@@ -64,7 +64,7 @@ global $graphene_settings;
     <div id="header">
     	
         <?php 
-			$header_img = '<img src="' . $header_img . '" alt="' . $alt . '" width="' . HEADER_IMAGE_WIDTH . '" height="' . HEADER_IMAGE_HEIGHT . '" class="header-img" />';
+			$header_img = '<img src="' . $header_img . '" alt="' . $alt . '" width="' . HEADER_IMAGE_WIDTH . '" height="360" class="header-img" />';
 			if ( ! is_front_page() && $graphene_settings['link_header_img'] ) {
 				$header_img_tag = '<a href="' . apply_filters( 'graphene_header_link' , home_url() ) . '" id="header_img_link" title="' . esc_attr__( 'Go back to the front page', 'graphene' ) . '">';
 				$header_img_tag .= $header_img;
